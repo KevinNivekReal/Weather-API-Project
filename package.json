@@ -1,0 +1,22 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "simple weather app using a weather forecast api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinNivekReal/Weather-API-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinNivekReal/Weather-API-Project/issues"
+  },
+  "homepage": "https://github.com/KevinNivekReal/Weather-API-Project#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
