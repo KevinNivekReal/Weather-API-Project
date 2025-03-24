@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/KevinNivekReal/Weather-API-Project#readme",
   "dependencies": {
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
   }
 }
