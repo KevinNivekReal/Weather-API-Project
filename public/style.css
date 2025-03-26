@@ -42,13 +42,12 @@
 .weather-icon {
     display: block;
     margin:auto;
-    margin-top: 25%;
-    width: 75%;
+    margin-top: 5%;
+    width: 20%;
 }
 
 .weather-info {
     text-align: center;
     font-size: 20px;
-    color: lightgreen;
-    margin-top: 30%;
+    margin-top: 10%;
 }
