@@ -1,9 +1,5 @@
 function geoFindMe() {
     const status = document.querySelector("#status");
-    const mapLink = document.querySelector("#map-link");
-  
-    mapLink.href = "";
-    mapLink.textContent = "";
   
     async function success(position) {
         const latitude = position.coords.latitude;

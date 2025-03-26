@@ -4,13 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>3 Day Forecast</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <button id="find-me">Show my location</button><br />
     <p id="status"></p>
-    <a id="map-link" target="_blank"></a>
-    <h1>It worked! yessirrreeee</h1>
+
+    <div id="body">
+        <div id="title">
+            <h1>3 Day Forecast</h1>
+        </div>
+        <div id="content">
+            <div id="curr_day" class="day-container">
+                <p id="curr_day_name" class="day-name">Monday</p>
+                <img src="" id="curr_day_icon" class="weather-icon">
+                <p id="curr_day_high_temp" class="weather-info"></p>
+                <p id="curr_day_low_temp" class="weather-info"></p>
+                <p id="curr_day_wind" class="weather-info"></p>
+            </div>
+            <div id="day_two" class="day-container">
+                <p id="day_two_name" class="day-name">Tuesday</p>
+                <img src="" id="day_two_icon" class="weather-icon">
+                <p id="day_two_high_temp" class="weather-info"></p>
+                <p id="day_two_low_temp" class="weather-info"></p>
+                <p id="day_two_wind" class="weather-info"></p>
+            </div>
+            <div id="day_three" class="day-container">
+                <p id="day_three_name" class="day-name">Wednesday</p>
+                <img src="" id="day_three_icon" class="weather-icon">
+                <p id="day_three_high_temp" class="weather-info"></p>
+                <p id="day_three_low_temp" class="weather-info"></p>
+                <p id="day_three_wind" class="weather-info"></p>
+            </div>
+        </div>
+    </div>
+
+
     <script src="client.js"></script>
 </body>
 </html>
