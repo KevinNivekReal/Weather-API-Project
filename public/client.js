@@ -2,8 +2,11 @@ function geoFindMe() {
     const status = document.querySelector("#status");
   
     async function success(position) {
+        //gets latitude and longitude from geolocation json data (stored in position paramater)
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
+
+        //calls the endpoint set up in our web server for the weather api json data
         const api_url = '/weather/' + latitude + '/' + longitude;
         const response = await fetch(api_url);
         const json = await response.json();
@@ -11,8 +14,8 @@ function geoFindMe() {
 
         const weekday = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday",];
         var array = document.getElementsByClassName("day-container");
-        console.log(array);
 
+        //populates each of the day boxes with the data from the weather api call
         for (var i = 0; i < array.length; i++){
             var weather = json.forecast.forecastday[i].day.condition.text;
             var weather_icon = "https:" + json.forecast.forecastday[0].day.condition.icon;
@@ -54,7 +57,8 @@ function geoFindMe() {
     function error() {
       status.textContent = "Unable to retrieve your location";
     }
-  
+    
+    //checks if geolocation is supported by the browser and if it is, continue with the program
     if (!navigator.geolocation) {
       status.textContent = "Geolocation is not supported by your browser";
     } else {
